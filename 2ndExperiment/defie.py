@@ -13,8 +13,11 @@ ka = int(pow(y,a,P))
 
 kb = int(pow(x,b,P))
 
-print('Secret key for the Alice is : %d'%(ka))
-print('Secret Key for the Bob is : %d'%(kb))
+print('The public key for Alice is: ',x)
+print('The public key for Bob is: ',y)
+
+print('Secret key for Alice is : %d'%(ka))
+print('Secret Key for Bob is : %d'%(kb))
 
 
 

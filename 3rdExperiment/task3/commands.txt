@@ -1,0 +1,11 @@
+enc -aes-128-ecb -e -in task3.txt -out encECB.txt -k aabbccddeeff00112233445566778899 -iv 0102030405060708
+enc -aes-128-ecb -d -in encECB.txt -out decECB.txt -k aabbccddeeff00112233445566778899 -iv 0102030405060708
+
+enc -aes-128-cbc -e -in task3.txt -out encCBC.txt -k aabbccddeeff00112233445566778899 -iv 0102030405060708
+enc -aes-128-cbc -d -in encCBC.txt -out decCBC.txt -k aabbccddeeff00112233445566778899 -iv 0102030405060708
+
+enc -aes-128-cfb -e -in task3.txt -out encCFB.txt -k aabbccddeeff00112233445566778899 -iv 0102030405060708
+enc -aes-128-cfb -d -in encCFB.txt -out decCFB.txt -k aabbccddeeff00112233445566778899 -iv 0102030405060708
+
+enc -aes-128-ofb -e -in task3.txt -out encOFB.txt -k aabbccddeeff00112233445566778899 -iv 0102030405060708
+enc -aes-128-ofb -d -in encOFB.txt -out decOFB.txt -k aabbccddeeff00112233445566778899 -iv 0102030405060708

@@ -1,0 +1,11 @@
+enc -aes-128-ecb -e -in size32.txt -out encECB32.txt -k aabbccddeeff00112233445566778899 -iv 0102030405060708
+enc -aes-128-ecb -d -nopad -in encECB32.txt -out decECB32.txt -k aabbccddeeff00112233445566778899 -iv 0102030405060708
+
+enc -aes-128-cbc -e -in size32.txt -out encCBC32.txt -k aabbccddeeff00112233445566778899 -iv 0102030405060708
+enc -aes-128-cbc -d -nopad -in encCBC32.txt -out decCBC32.txt -k aabbccddeeff00112233445566778899 -iv 0102030405060708
+
+enc -aes-128-cfb -e -in size32.txt -out encCFB32.txt -k aabbccddeeff00112233445566778899 -iv 0102030405060708
+enc -aes-128-cfb -d -nopad -in encCFB32.txt -out decCFB32.txt -k aabbccddeeff00112233445566778899 -iv 0102030405060708
+
+enc -aes-128-ofb -e -in size32.txt -out encOFB32.txt -k aabbccddeeff00112233445566778899 -iv 0102030405060708
+enc -aes-128-ofb -d -nopad -in encOFB20.txt -out decOFB20.txt -k aabbccddeeff00112233445566778899 -iv 0102030405060708

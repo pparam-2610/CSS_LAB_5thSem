@@ -136,14 +136,14 @@ if a == 1:
     text = input('Enter Plain Text: ')
     key = int(input('No of position to be shifted: '))
     encrpytedText = encryptBySubstitution(text,key)
-    print('Encrypted Message',encrpytedText)
-    print('Decrypted Message',decryptBySubstitution(encrpytedText,key))
+    print('Encrypted Message: ',encrpytedText)
+    print('Decrypted Message: ',decryptBySubstitution(encrpytedText,key))
 
 elif a == 2:
     text = input('Enter Plain Text to be encrypted: ')
     encrpytedText = encryptBySubstitution(text, 13)
-    print('Encrypted Message', encrpytedText)
-    print('Decrypted Message', decryptBySubstitution(encrpytedText, 13))
+    print('Encrypted Message: ', encrpytedText)
+    print('Decrypted Message: ', decryptBySubstitution(encrpytedText, 13))
 
 elif a == 3:
     text = input('Enter Plain Text to be encrypted: ')
@@ -158,7 +158,7 @@ elif a == 4:
     key1 = input('Enter key 1: ')
     key2 = input('Enter key 2: ')
     encryptedText1 = (encryptByTranspose(text,key1))
-    encryptedText2 = (encryptByTranspose(text,key2))
+    encryptedText2 = (encryptByTranspose(encryptedText1,key2))
     decryptedText1 = decryptByTranspose(encryptedText2,key2)
     decryptedText2 = decryptByTranspose(encryptedText1,key1)
     print("The encrypted cipher is: ",filterText(encryptedText2))
